@@ -1,5 +1,30 @@
 import React, {Component} from 'react';
+import ProjectCard from './ProjectCard';
 
-export default (props) => {
-  return <h1>Home Page</h1>
+import Project from '../../models/Project';
+
+export default class Home extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      projects: [],
+    };
+  }
+
+  componentDidMount(){
+    Project.all().then(projects => {
+      this.setState({ projects });
+    });
+  }
+
+  renderProjects(){
+    return this.state.projects.map(project => <ProjectCard project={project} />);
+  }
+
+  render(){
+    return <div className="container">
+      <h1>Kentaro's Projects</h1>
+      { this.renderProjects() }
+    </div>
+  }
 }
