@@ -15,6 +15,7 @@ const project = (sequelize, DataTypes) => {
     },
     description: {
       type: DataTypes.TEXT,
+      defaultValue: "",
     },
     githubURL: {
       type: DataTypes.STRING,
@@ -32,6 +33,7 @@ const project = (sequelize, DataTypes) => {
     },
     technologies: {
       type: DataTypes.ARRAY(DataTypes.STRING),
+      defaultValue: [],
     },
   });
   return Project;
