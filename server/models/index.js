@@ -6,6 +6,7 @@ const sequelize = new Sequelize('k3ntako_development', null, null, {
 
 const models = {
   User: sequelize.import('./user'),
+  Project: sequelize.import('./project'),
 };
 
 Object.keys(models).forEach(key => {
