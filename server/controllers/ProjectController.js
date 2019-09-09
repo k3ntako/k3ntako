@@ -14,10 +14,13 @@ const ProjectController = {
 
   async create(req, res, next){
     try{
-      const { name = null, description = null, githubURL = null, demoURL = null, startDate = null, endDate = null, technologies = null } = req.body;
-      const project = Project.create({ name, description, githubURL, demoURL, startDate, endDate, technologies });
+      const { name, description = null, githubURL = null, demoURL = null, videoURL = null, startDate = null, endDate = null, technologies = null } = req.body;
 
-      res.json(project);
+      await Project.create({
+        name, description, githubURL, demoURL, videoURL, startDate, endDate, technologies
+      })
+
+      res.json({ okay: true });
       next();
     } catch(err) {
       next(err);

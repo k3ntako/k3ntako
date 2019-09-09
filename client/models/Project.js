@@ -2,24 +2,23 @@ import FetchHelper from './FetchHelper';
 
 export default class Project{
   constructor(props){
-    const { name = null, description = null, githubURL = null, demoURL = null, startDate = null, endDate = null, technologies = null } = req.body;
+    const { name, description, githubURL, demoURL, videoURL, startDate, endDate, technologies } = props;
 
     this._name = name;
-    this._description = description;
-    this._githubURL = githubURL;
-    this._demoURL = _demoURL;
-    this._startDate = _startDate;
-    this._endDate = _endDate;
-    this._technologies = _technologies;
+    this._description = description || null;
+    this._githubURL = githubURL || null;
+    this._demoURL = demoURL || null;
+    this._videoURL = videoURL || null;
+    this._startDate = startDate || null;
+    this._endDate = endDate || null;
+    this._technologies = technologies || null;
   }
 
   static all(){
     return FetchHelper.get('/api/projects');
   }
 
-  create(){
-    return FetchHelper.get('/api/projects').then(project => {
-      return new Project(project)
-    });
+  static create( params ){
+    return FetchHelper.post('/api/projects', params);
   }
 }
