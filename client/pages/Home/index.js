@@ -18,11 +18,13 @@ export default class Home extends Component {
   }
 
   renderProjects = () => {
-    return this.state.projects.map(project => <ProjectCard key={project.id} project={project} />);
+    return this.state.projects.map((project, idx) => {
+      return <ProjectCard key={project.id} idx={idx} project={project} />
+    });
   }
 
   render(){
-    return <div className="container">
+    return <div className="page">
       <h1>Kentaro's Projects</h1>
       { this.renderProjects() }
     </div>
