@@ -23,12 +23,9 @@ h4{
   font-size: 1.5rem;
 }
 
-.page{
+.part{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   max-width: 1200px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-top: 2rem;
 }

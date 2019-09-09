@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ProjectCard from './ProjectCard';
 
 import Project from '../../models/Project';
+import styles from './index.css';
 
 export default class Home extends Component {
   constructor(props){
@@ -25,7 +26,9 @@ export default class Home extends Component {
 
   render(){
     return <div className="page">
-      <h1>Kentaro's Projects</h1>
+      <div className={styles.heading}>
+        <h1 className="part">Kentaro's Projects</h1>
+      </div>
       { this.renderProjects() }
     </div>
   }
