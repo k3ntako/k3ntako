@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const { models, sequelize } = require('./models');
+const { seedDatabase } = require('./seed');
 
 // Express Set-up
 const app = express();
@@ -39,7 +40,11 @@ if( !res.headersSent ){
 
 // Connect to db and start server
 // REMOVE FORCE BEFORE DEPLOYING
-sequelize.sync({ force: true }).then(() => {
+// ADD MIGRARTIONS AS REPLACEMENT
+const dropDatabaseOnStart = true;
+sequelize.sync({ force: dropDatabaseOnStart }).then(async () => {
+  if( dropDatabaseOnStart ) await seedDatabase();
+
   app.listen( 3000, function() {
     console.log('Server started at port 3000');
   });
