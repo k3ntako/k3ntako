@@ -38,7 +38,7 @@ class AddProject extends Component {
 
   render(){
     const { name, description, githubURL, demoURL } = this.state;
-    return <div className="page">
+    return <div>
       <div>
         <label>Name</label>
         <input type="text" onChange={this.onNameChange} />

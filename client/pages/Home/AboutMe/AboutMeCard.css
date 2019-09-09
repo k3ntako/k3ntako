@@ -1,0 +1,20 @@
+.cardWrapper{
+  padding: 1rem 0 2rem 0;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title{
+  margin: 0;
+}
+
+.cardWrapper span{
+  display: block;
+  font-size: 1.3rem;
+}
+.datumRight{
+  text-align: right;
+}
