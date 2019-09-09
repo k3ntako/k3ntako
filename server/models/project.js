@@ -25,6 +25,10 @@ const project = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       unique: true,
     },
+    videoURL: {
+      type: DataTypes.STRING,
+      unique: true,
+    },
     startDate: {
       type: DataTypes.DATEONLY,
     },

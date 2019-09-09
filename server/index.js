@@ -38,7 +38,8 @@ if( !res.headersSent ){
 });
 
 // Connect to db and start server
-sequelize.sync().then(() => {
+// REMOVE FORCE BEFORE DEPLOYING
+sequelize.sync({ force: true }).then(() => {
   app.listen( 3000, function() {
     console.log('Server started at port 3000');
   });
