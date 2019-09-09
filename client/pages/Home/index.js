@@ -11,14 +11,14 @@ export default class Home extends Component {
     };
   }
 
-  componentDidMount(){
+  componentDidMount = () => {
     Project.all().then(projects => {
       this.setState({ projects });
     });
   }
 
-  renderProjects(){
-    return this.state.projects.map(project => <ProjectCard project={project} />);
+  renderProjects = () => {
+    return this.state.projects.map(project => <ProjectCard key={project.id} project={project} />);
   }
 
   render(){
