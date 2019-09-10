@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import ProjectCard from './ProjectCard';
 
 import Project from '../../../models/Project';
-import styles from './index.css';
 
 export default class ProjectSection extends Component {
   constructor(props){
@@ -25,11 +24,8 @@ export default class ProjectSection extends Component {
   }
 
   render(){
-    return <div>
-      <div className={styles.heading}>
-        <h1 className="part">Projects</h1>
-      </div>
+    return <>
       { this.renderProjects() }
-    </div>
+    </>
   }
 }

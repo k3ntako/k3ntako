@@ -1,12 +1,12 @@
 import React from 'react';
 import AboutMe from './AboutMe';
-import ProjectSection from './Project';
-
-import styles from './index.css';
+import Education from './Education';
+import Projects from './Project';
 
 export default (props) => {
   return <div>
     <AboutMe />
-    <ProjectSection />
+    <Education />
+    <Projects />
   </div>
 }

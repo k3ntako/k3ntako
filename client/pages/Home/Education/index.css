@@ -1,0 +1,28 @@
+.education{
+  display: flex;
+  padding: 5rem 0;
+  text-align: center;
+  color: #fff;
+}
+.education > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.left{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4.5rem;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+.right > h2, .right > h3{
+  margin: 0;
+}
+.minor{
+  font-size: 1.3rem;
+}

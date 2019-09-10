@@ -35,8 +35,16 @@ export default class AboutMeSection extends Component {
   }
 
   render(){
-    return <div>
-
+    return <div className={styles.wrapper}>
+      <div className={styles.inner}>
+        <h1>Kentaro Kaneki</h1>
+        <span>Full-stack developer</span>
+        <span>Brooklyn, NY</span>
+      </div>
+      <div className={styles.nav}>
+        <span>About Me</span>
+        <span>Projects</span>
+      </div>
     </div>
   }
 }
