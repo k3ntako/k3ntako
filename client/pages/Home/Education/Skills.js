@@ -9,6 +9,7 @@ const iconsTop = [
   { src: "/icons/javascript.svg", text: "Javascript" },
   { src: "/icons/ruby.svg", text: "Ruby" },
   { img: "/icons/database.png", text: "Database" },
+  { img: "/icons/code.png", text: "Other" },
 ]
 
 const iconsBottom = [
