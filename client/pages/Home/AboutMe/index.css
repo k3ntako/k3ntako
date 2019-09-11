@@ -28,7 +28,12 @@
 .nav{
   margin-bottom: 1rem;
 }
-.nav > span {
+.nav > a {
   font-size: 1.3rem;
   margin: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.nav > a:hover {
+  text-decoration: underline;
 }

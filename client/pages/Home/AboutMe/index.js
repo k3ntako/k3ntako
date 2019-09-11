@@ -42,8 +42,8 @@ export default class AboutMeSection extends Component {
         <span>Brooklyn, NY</span>
       </div>
       <div className={styles.nav}>
-        <span>About Me</span>
-        <span>Projects</span>
+        <a href="#aboutMe">About Me</a>
+        <a href="#projects">Projects</a>
       </div>
     </div>
   }

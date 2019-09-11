@@ -24,8 +24,8 @@ export default class ProjectSection extends Component {
   }
 
   render(){
-    return <>
+    return <div id="projects">
       { this.renderProjects() }
-    </>
+    </div>
   }
 }
