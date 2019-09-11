@@ -21,19 +21,21 @@ const iconsBottom = [
 export default (props) => {
   const [ selected, setSelected ] = useState("Javascript");
 
-  return <div className={styles.wrapper}>
-    <div className={`${styles.skills} part`}>
-      <div className={styles.left}>
-        {
-          iconsTop.map(info => <Icon info={info} onClick={setSelected} selected={selected}/>)
-        }
-        <h5>Exposure to</h5>
-        {
-          iconsBottom.map(info => <Icon info={info} onClick={setSelected} selected={selected}/>)
-        }
-      </div>
-      <div className={styles.right}>
-        { skillTexts[selected] }
+  return <div id="skills">
+    <div className={styles.wrapper}>
+      <div className={`${styles.skills} part`}>
+        <div className={styles.left}>
+          {
+            iconsTop.map(info => <Icon key={info.text} info={info} onClick={setSelected} selected={selected}/>)
+          }
+          <h5>Exposure to</h5>
+          {
+            iconsBottom.map(info => <Icon key={info.text} info={info} onClick={setSelected} selected={selected}/>)
+          }
+        </div>
+        <div className={styles.right}>
+          { skillTexts[selected] }
+        </div>
       </div>
     </div>
   </div>

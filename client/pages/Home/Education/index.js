@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import EducationCard from './EducationCard';
-import Skills from './Skills'
 
 import styles from './index.css';
 
@@ -46,7 +45,6 @@ export default class EducationSection extends Component {
       <Blank />
       { this.renderEducation() }
       <Blank />
-      <Skills />
     </div>
   }
 }

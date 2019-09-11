@@ -11,16 +11,14 @@ export default (props) => {
         <h3 className={styles.title}>{info.name}</h3>
         <div>
           {
-            info.minorDetails.map(minorDetail => {
-              return <span className={styles.datumRight}>{ minorDetail }</span>
+            info.minorDetails.map((minorDetail, idx) => {
+              return <span key={idx} className={styles.datumRight}>{ minorDetail }</span>
             })
           }
         </div>
       </div>
       {
-        info.details.map(detail => {
-          return <span>{ detail }</span>
-        })
+        info.details.map((detail, idx) => <span key={idx}>{ detail }</span>)
       }
     </div>
   </div>
