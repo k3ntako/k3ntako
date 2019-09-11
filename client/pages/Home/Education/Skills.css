@@ -1,0 +1,61 @@
+.wrapper{
+  padding: 3rem 0;
+  background-color: #34495e;
+  color: #eee;
+}
+
+.skills{
+  display: flex;
+}
+
+.left{
+  width: 33%;
+}
+
+.left h5{
+  margin: 0;
+  padding: 1.67em;
+
+  text-align: center;
+}
+
+.iconWrapper{
+  display: flex;
+  padding: 1rem 0;
+}
+
+.iconWrapper:hover{
+  background-color: #46637f;
+}
+
+.icon {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icon > svg, .image{
+  height: 48px;
+  width: 48px;
+}
+
+.text {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  font-size: 1.3rem;
+}
+
+.right{
+  flex: 1;
+  padding: 2rem;
+}
+.right > h3{
+  margin: 0;
+}
+.active{
+  background-color: #4f6f8f;
+  color: #eee;
+}
