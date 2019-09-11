@@ -10,7 +10,6 @@ export default class EducationSection extends Component {
     this.state = {
       education: [
         {
-          color: "#fff",
           title: "Launch Academy",
           subtitle: "Boston, MA",
           details: [
@@ -20,14 +19,12 @@ export default class EducationSection extends Component {
           startDate: "Sept 2018",
           endDate: "Nov 2018",
         },{
-          color: "#fff",
           title: "Memorial Sloan Kettering Cancer Center",
           subtitle: "New York, NY - Research Study Assistant",
           details: ["Worked with engineers to develop a new database for cancer research"],
           startDate: "Sept 2017",
           endDate: "June 2018",
         },{
-          color: "#fff",
           title: "Vassar College",
           subtitle: "Poughkeepsie, NY",
           details: ["B.A. Neuroscience and Behavior; Asian Studies (Minor)"],
@@ -46,10 +43,22 @@ export default class EducationSection extends Component {
 
   render(){
     return <div id="aboutMe">
+      <Blank />
       { this.renderEducation() }
+      <Blank />
       <Skills />
     </div>
   }
 }
-// <img src="/images/vassar.png"/>
-// color: "#002842",
+
+const Blank = () => {
+  return <div className={styles.wrapper}>
+    <div className="part">
+      <div className={styles.blank}>
+        <svg viewBox="0 0 125 75">
+          <line x1="115" x2="115" y1="0" y2="75" stroke="gray" strokeWidth="3" />
+        </svg>
+      </div>
+    </div>
+  </div>
+}

@@ -12,7 +12,7 @@ const renderDetails = ( details ) => {
 export default (props) => {
   const info = props.info;
 
-  return <div className={styles.wrapper} style={{ backgroundColor: info.color}}>
+  return <div className={styles.wrapper}>
     <div className={`${styles.education} part`}>
       <div className={styles.left}>
         <span>{info.startDate}</span>
@@ -33,4 +33,3 @@ export default (props) => {
     </div>
   </div>
 }
-// <img src="/images/vassar.png"/>

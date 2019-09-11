@@ -3,7 +3,6 @@
 }
 .education > div{
   display: flex;
-  justify-content: center;
 }
 
 .left{
@@ -40,4 +39,10 @@
 }
 .detail{
   font-size: 1.3rem;
+}
+
+.blank{
+  margin-left: 10%;
+  width: 125px;
+  height: 75px;
 }
