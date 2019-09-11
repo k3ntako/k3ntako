@@ -1,19 +1,30 @@
 .education{
   display: flex;
-  padding: 5rem 0;
-  text-align: center;
-  color: #fff;
 }
 .education > div{
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 50%;
 }
 
 .left{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  width: 75px;
+}
+.left > span{
+  display: block;
+  text-align: center;
+  color: #585858;
+}
+
+.middle{
+  width: 80px;
+}
+.middle > svg{
+  height: 100%;
+  width: 100%;
 }
 
 .right{
@@ -23,6 +34,10 @@
 .right > h2, .right > h3{
   margin: 0;
 }
-.minor{
+
+.subtitle{
+  margin-bottom: 1rem;
+}
+.detail{
   font-size: 1.3rem;
 }

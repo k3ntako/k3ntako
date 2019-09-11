@@ -9,20 +9,29 @@ export default class EducationSection extends Component {
     this.state = {
       education: [
         {
-          color: "#287B42",
+          color: "#fff",
           title: "Launch Academy",
-          subtitle: "React, Rails, PostgreSQL",
-          details: "Fast, responsive, and tested websites",
+          subtitle: "Boston, MA",
+          details: [
+            "React, Rails, PostgreSQL",
+            "Fast, responsive, and tested websites"
+          ],
+          startDate: "Sept 2018",
+          endDate: "Nov 2018",
         },{
-          color: "#3776C7",
-          title: "Memorial Sloan Kettering",
-          subtitle: "Research Study Assistant",
-          details: "Worked with engineers to develop a new database for cancer research",
+          color: "#fff",
+          title: "Memorial Sloan Kettering Cancer Center",
+          subtitle: "New York, NY - Research Study Assistant",
+          details: ["Worked with engineers to develop a new database for cancer research"],
+          startDate: "Sept 2017",
+          endDate: "June 2018",
         },{
-          color: "#7B2842",
+          color: "#fff",
           title: "Vassar College",
-          subtitle: "Neuroscience",
-          details: "Asian Studies (minor)",
+          subtitle: "Poughkeepsie, NY",
+          details: ["B.A. Neuroscience and Behavior; Asian Studies (Minor)"],
+          startDate: "Aug 2013",
+          endDate: "May 2017",
         }
       ]
     };
