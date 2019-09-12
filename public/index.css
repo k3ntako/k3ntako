@@ -40,6 +40,10 @@ h5{
   padding: 0 1rem;
 }
 
+div.Toastify__toast-container--top-right{
+  top: 55px;
+}
+
 /* Section */
 #aboutMe, #skills, #projects{
   margin-top: -45px;

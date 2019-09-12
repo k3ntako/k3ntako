@@ -4,6 +4,7 @@ import Education from './Education';
 import Skills from './Skills';
 import Projects from './Project';
 import ContactMe from './ContactMe';
+import { ToastContainer, toast } from 'react-toastify';
 
 export default (props) => {
   return <div>
@@ -12,5 +13,6 @@ export default (props) => {
     <Skills />
     <Projects />
     <ContactMe />
+    <ToastContainer />
   </div>
 }
