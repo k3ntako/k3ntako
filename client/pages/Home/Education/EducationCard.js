@@ -12,7 +12,7 @@ const renderDetails = ( details ) => {
 export default (props) => {
   const info = props.info;
 
-  return <div className={styles.wrapper}>
+  return <div>
     <div className={`${styles.education} part`}>
       <div className={styles.left}>
         <span>{info.startDate}</span>

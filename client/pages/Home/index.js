@@ -3,6 +3,7 @@ import AboutMe from './AboutMe';
 import Education from './Education';
 import Skills from './Skills';
 import Projects from './Project';
+import ContactMe from './ContactMe';
 
 export default (props) => {
   return <div>
@@ -10,5 +11,6 @@ export default (props) => {
     <Education />
     <Skills />
     <Projects />
+    <ContactMe />
   </div>
 }

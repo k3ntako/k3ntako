@@ -1,0 +1,30 @@
+.all{
+  display: block;
+  box-sizing: border-box;
+  height: 45px;
+  width: 100%;
+  max-width: 700px;
+  padding: 0.7rem;
+  margin: 0.7rem 0;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.input{
+
+}
+
+.textarea{
+  height: 200px;
+}
+
+.button{
+  width: 100px;
+  background-color: #4f6f8f;
+  color: white;
+}
+
+.disabled{
+  opacity: 0.3;
+}
