@@ -51,14 +51,34 @@ export default class Top extends Component {
     }
   }
 
+  scrollToTop = () => {
+    document.documentElement.scrollTop = 0;
+  }
+
   render(){
     const stickyClassName = this.state.isSticky ? styles.sticky : "";
+    const hiddenClassName = this.state.isSticky ? "" : styles.hidden;
 
     return <div id={styles.nav} className={stickyClassName}>
-      <a href="#aboutMe">About Me</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contactMe">Contact Me</a>
+      <div className={`${styles.websiteTitle} ${hiddenClassName}`}>
+        <a onClick={this.scrollToTop}>
+          Kentaro Kaneki
+        </a>
+      </div>
+      <div className={styles.pageLinks}>
+        <a href="#aboutMe">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contactMe">Contact Me</a>
+      </div>
+      <div className={styles.externalLinks}>
+        <a href="https://github.com/k3ntako" target="_blank">
+          <i className="fab fa-github fa-lg"></i>
+        </a>
+        <a href="https://linkedin.com/in/kentaro-kaneki/" target="_blank">
+          <i className="fab fa-linkedin fa-lg"></i>
+        </a>
+      </div>
     </div>
   }
 }
