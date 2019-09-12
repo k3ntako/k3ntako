@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import SVG from 'react-inlinesvg';
+import Icon from './Icon';
+
 const skillTexts = require('./skillTexts');
-
-
-import styles from './Skills.css';
+import styles from './index.css';
 
 const iconsTop = [
   { src: "/icons/javascript.svg", text: "Javascript" },
@@ -37,22 +36,6 @@ export default (props) => {
           { skillTexts[selected] }
         </div>
       </div>
-    </div>
-  </div>
-}
-
-
-const Icon = (props) => {
-  const info = props.info;
-  const icon = info.src ? <SVG src={info.src} /> : <img src={info.img} className={styles.image}/>
-  const activeClass = info.text === props.selected ? styles.active : "";
-
-  return <div className={`${styles.iconWrapper} ${activeClass}`} onClick={() => props.onClick(info.text)}>
-    <div className={styles.icon}>
-      { icon }
-    </div>
-    <div className={styles.text}>
-      { info.text }
     </div>
   </div>
 }

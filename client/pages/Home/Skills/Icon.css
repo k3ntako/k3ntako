@@ -1,0 +1,33 @@
+.iconWrapper{
+  display: flex;
+  padding: 1rem 0;
+}
+
+.iconWrapper:hover{
+  background-color: #46637f;
+}
+
+.icon {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icon > svg, .icon > img{
+  height: 48px;
+  width: 48px;
+}
+
+.text {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  font-size: 1.3rem;
+}
+
+.active{
+  background-color: #4f6f8f;
+  color: #eee;
+}
