@@ -1,6 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import MobileMenu from './MobileMenu';
+import ExternalLinkIcons from './ExternalLinkIcons';
 
-import styles from './index.css';
+import styles from './Nav.css';
+
+const NAV_LINKS_INFO = [
+  { href: "#aboutMe", text: "About Me" },
+  { href: "#skills", text: "Skills" },
+  { href: "#projects", text: "Projects" },
+  { href: "#contactMe", text: "Contact Me" },
+];
+
+const NAV_LINKS = NAV_LINKS_INFO.map(info => <a key={info.href} href={info.href}>{info.text}</a> );
 
 export default class Top extends Component {
   constructor(props){
@@ -61,24 +72,20 @@ export default class Top extends Component {
 
     return <div id={styles.nav} className={stickyClassName}>
       <div className={`${styles.websiteTitle} ${hiddenClassName}`}>
-        <a onClick={this.scrollToTop}>
+        <a className={styles.fullname} onClick={this.scrollToTop}>
           Kentaro Kaneki
+        </a>
+        <a className={styles.firstname} onClick={this.scrollToTop}>
+          Kentaro
         </a>
       </div>
       <div className={styles.pageLinks}>
-        <a href="#aboutMe">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contactMe">Contact Me</a>
+        { NAV_LINKS }
       </div>
       <div className={styles.externalLinks}>
-        <a href="https://github.com/k3ntako" target="_blank">
-          <i className="fab fa-github fa-lg"></i>
-        </a>
-        <a href="https://linkedin.com/in/kentaro-kaneki/" target="_blank">
-          <i className="fab fa-linkedin fa-lg"></i>
-        </a>
+        <ExternalLinkIcons />
       </div>
+      <MobileMenu navLinksInfo={ NAV_LINKS_INFO }/>
     </div>
   }
 }

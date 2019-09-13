@@ -9,6 +9,11 @@ body{
   padding: 0;
   margin: 0;
   font-size: 16px;
+  overflow-x: hidden;
+}
+
+body.navMenuOpen{
+  overflow: hidden;
 }
 
 h1{
@@ -29,6 +34,10 @@ h4{
 
 h5{
   font-size: 1.25rem;
+}
+
+a{
+  cursor: pointer;
 }
 
 .part{
