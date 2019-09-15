@@ -15,14 +15,14 @@ export default class EducationSection extends Component {
             "React, Rails, PostgreSQL",
             "Fast, responsive, and tested websites"
           ],
-          startDate: "Sept 2018",
+          startDate: "Sep 2018",
           endDate: "Nov 2018",
         },{
           title: "Memorial Sloan Kettering Cancer Center",
           subtitle: "New York, NY - Research Study Assistant",
           details: ["Worked with engineers to develop a new database for cancer research"],
-          startDate: "Sept 2017",
-          endDate: "June 2018",
+          startDate: "Sep 2017",
+          endDate: "Jun 2018",
         },{
           title: "Vassar College",
           subtitle: "Poughkeepsie, NY",
@@ -52,9 +52,9 @@ export default class EducationSection extends Component {
 const Blank = () => {
   return <div className={styles.wrapper}>
     <div className="part">
-      <div className={styles.blank}>
-        <svg viewBox="0 0 125 75">
-          <line x1="115" x2="115" y1="0" y2="75" stroke="gray" strokeWidth="3" />
+      <div className={`${styles.middle} ${styles.blank}`}>
+        <svg>
+          <line x1="50%" x2="50%" y1="0%" y2="100%" stroke="gray" strokeWidth="3" />
         </svg>
       </div>
     </div>

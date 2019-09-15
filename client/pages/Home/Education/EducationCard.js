@@ -20,9 +20,9 @@ export default (props) => {
         <span>{info.endDate}</span>
       </div>
       <div className={styles.middle}>
-        <svg viewBox="0 0 80 150">
-          <line x1="40" x2="40" y1="0" y2="150" stroke="gray" strokeWidth="3" />
-          <circle cx="40" cy="75" r="5" fill="#fff" stroke="#34495e" strokeWidth="4" />
+        <svg>
+          <line x1="50%" x2="50%" y1="0%" y2="100%" stroke="gray" strokeWidth="3" />
+          <circle cx="50%" cy="50%" r="5" fill="#fff" stroke="#34495e" strokeWidth="4" />
         </svg>
       </div>
       <div className={styles.right}>
