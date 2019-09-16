@@ -2,40 +2,37 @@ import React from 'react';
 
 const Javascript = <>
   <h2>Javascript</h2>
-  <p>Experience building <strong>React</strong> websites with both <strong>Express.js</strong> and <strong>Ruby on Rails</strong>.</p>
-  <p><strong>Tested</strong> both front- and back-ends using libraries such as <strong>Chai</strong>, <strong>Mocha</strong>, <strong>Jest</strong>, and <strong>Enzyme</strong>.</p>
-  <h4>React</h4>
-  <p><strong>React-Router</strong>, <strong>Prop-Types</strong>, and <strong>Redux</strong> are the fundamentals of reliable React development.</p>
-  <p><strong>Foundation</strong> and <strong>React-Bootstrap</strong> for quick development.</p>
+  <h4>Front-End</h4>
+  <p><strong>React</strong>, <strong>React-Router</strong>, <strong>Prop-Types</strong>, <strong>Redux</strong>, <strong>Workbox</strong>, <strong>Foundation</strong>, and <strong>React-Bootstrap</strong></p>
 
   <h4>Other</h4>
-  <p><strong>Babel</strong> and <strong>Webpack</strong> for backwards compatibility and bundling.</p>
-  <p><strong>Mongoose</strong> to query and manipulate MongoDB.</p>
-  <p>This website utilizes <strong>Sequelize</strong> to query manipulate the PostgreSQL database.</p>
+  <p><strong>Mongoose</strong>, <strong>Sequelize</strong>, <strong>Babel</strong>, and <strong>Webpack</strong></p>
+
+  <h4>Testing</h4>
+  <p><strong>Chai</strong>, <strong>Mocha</strong>, <strong>Jest</strong>, and <strong>Enzyme</strong></p>
+
 </>
 
 const Ruby = <>
   <h2>Ruby</h2>
-  <p><strong>Ruby on Rails</strong> along with <strong>Active Record</strong> to build robust websites with a <strong>PostgreSQL</strong> database.</p>
+  <p><strong>Ruby on Rails</strong>, <strong>Active Record</strong>, <strong>Devise</strong>, <strong>Carrierwave</strong>, <strong>fog-aws</strong>, <strong>RSpec</strong>, and <strong>Capybara</strong></p>
   <h4>Webscraping</h4>
-  <p><strong>Nokogiri</strong> to scrape Starbucks store location data in Z-Scrapper for use in CafeTako. It was also used for a mini-project at Launch Academy (no demo).</p>
-  <p>Testing with <strong>RSpec</strong>.</p>
+  <p><strong>Nokogiri</strong>: scraped Starbucks store location data for use in <a href="https://github.com/k3ntako/CafeTako" target="_blank">CafeTako</a>. It was also used for a mini-project at Launch Academy.</p>
 </>
 
 const Database = <>
   <h2>PostgreSQL</h2>
-  <p>Managed relational databases to provide information to the front-end via controllers.</p>
-  <p><strong>Active Record</strong> to interact with the database and validate the information.</p>
-  <p>This website utilizes <strong>Sequelize</strong> to query manipulate the PostgreSQL database.</p>
+  <p><strong>Active Record</strong> (Ruby on Rails) and <strong>Sequelize</strong> (Express.js)</p>
+  <p>I am new to <strong>Sequelize</strong>, as this website is my first experience with it. So far, it has been similar to Mongoose (ORM for MongoDB) and I find it very intuitive.</p>
 
   <h3>MongoDB</h3>
-  <p>No-SQL database for quick and flexible development</p>
-  <p><strong>Mongoose</strong> to query and manipulate MongoDB.</p>
+  <p><strong>Mongoose</strong>, <strong>MongoDB Compass</strong> (GUI), and <strong>Robo 3T</strong> (GUI).</p>
 </>
 
 const Other = <>
-  <h3>Git and Github</h3>
-  <h3>Communication</h3>
+  <h2>Other</h2>
+  <p><strong>HTML</strong>, <strong>CSS</strong>, <strong>Git</strong>, <strong>Github</strong>, and <strong>Heroku</strong></p>
+  <p>I have been working with <strong>HTML</strong> and <strong>CSS</strong> as a hobby since middle school. I have gained a great appreciation for design in the process.</p>
 </>
 
 const Swift = <>
@@ -48,11 +45,11 @@ const Swift = <>
     While working at <strong>Memorial Sloan Kettering Cancer Center</strong>, our lab technicians would take measurements of tumor growth on a piece of paper.
     That information was put in an Excel sheet and then into a database.
     During my free time (after work and weekends), I built an iPad app that they could enter the data into.
-    Unfortunately, without the authorized access to their APIs I was unable to persist the information on the database.
-    Shortly after, I had to leave my position to move back to Boston to care for a sick family member.
+    Unfortunately, without the authorized access to the database's APIs I was unable to persist the information on the database.
+    Shortly after, I had to leave my position to move back to Boston to for a family emergency, so I was unable to continue on this project.
   </p>
   <p>
-    Swift is a language that I hope to relearn in the future.
+    Swift is a language that I hope to work on   in the future.
   </p>
 </>
 
@@ -73,10 +70,10 @@ const R = <>
     The information that was retreived would be outputed into an HTML file formatted as a table.
   </p>
   <p>
-    As mentioned in the Swift section, a large inefficiency at my lab at <strong>Memorial Sloan Kettering</strong> we faced was data entry.
-    As a side project, I tried to parse their Excel files to output a new Excel document formatted for upload to our database.
-    It was largely successful, however, inconsistencies in formatting and merged cells, as well as human error made my project unfeasible.
-    We needed reliable data, so I made the decision not to use the program.
+    As mentioned in the Swift section, a large obstacle at my lab at <strong>Memorial Sloan Kettering</strong> was data entry.
+    As a side project, I parsed their Excel files to output a new Excel document formatted for upload to our database.
+    Inconsistencies in formatting as well as human error made my project unfeasible. Our research required reliable and accurate data, so I made the decision not to use the program.
+    Though I was unable to use the program to speed up my workflow, it was a valuable learning experience.
   </p>
 </>
 

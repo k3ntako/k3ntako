@@ -6,14 +6,14 @@ const seedData = [
     name: "Wakebird",
     description: "A website for dragon boat team coaches to manage their team. The website allows coaches to create events and boat line-ups, manage their roster, view each individual's attendance, and much more. A team member can respond to events to let the coach know if they are attending the event, send emails to the team, get reminders to respond to events and much more.",
     githubURL: "https://github.com/mighty-speed-krush/Mighty-Speed-Krush",
-    demoURL: "https://www.wakebird.com",
+    demoURL: "https://vimeo.com/337669750",
     videoURL: null,
     startDate: null,
     endDate: null,
     technologies: []
   },{
     name: "CafeTako",
-    description: "A website for finding and reviewing the best (or worst) cafes for studying. I noticed that neither Google nor Yelp offered consistent data on whether a cafe was suitable for doing work. Currently, I have scrapped data for Starbucks around NYC and they can be reviewed.",
+    description: "A website for finding and reviewing the best (or worst) cafes for studying. I noticed that neither Google nor Yelp offered consistent data on whether a cafe was suitable for doing work. Currently, I have scrapped data for Starbucks around NYC and they can be reviewed. This project is currently in development, and there are areas needing improvement.",
     githubURL: "https://github.com/k3ntako/CafeTako",
     demoURL: "https://cafetako.herokuapp.com",
     videoURL: null,
