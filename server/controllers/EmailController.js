@@ -1,4 +1,3 @@
-require('dotenv').config();
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -15,7 +14,7 @@ const EmailController = {
       const msg = {
         to: 'kentarokaneki@gmail.com',
         from: 'no-reply@k3ntako.com',
-        subject: subject || "",
+        subject: subject.trim() || "Email from " + name,
         text: messageWithEmail,
         html: messageWithEmail,
       };
@@ -26,6 +25,7 @@ const EmailController = {
       next();
     } catch(err) {
       console.error(err);
+      console.error(err.response.body.errors);
       next(err);
     }
   },

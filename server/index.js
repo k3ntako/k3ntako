@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -45,7 +46,7 @@ const dropDatabaseOnStart = true;
 sequelize.sync({ force: dropDatabaseOnStart }).then(async () => {
   if( dropDatabaseOnStart ) await seedDatabase();
 
-  app.listen( 3000, function() {
+  app.listen( process.env.PORT || 3000, function() {
     console.log('Server started at port 3000');
   });
 });

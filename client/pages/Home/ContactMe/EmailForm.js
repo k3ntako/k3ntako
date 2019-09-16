@@ -57,7 +57,7 @@ export default class EmailForm extends Component{
   }
 
   successToastify(){
-    toast.success("Sent! Thank you for you email!", {
+    toast.success("Sent! Thank you for your email!", {
       position: toast.POSITION.TOP_RIGHT,
     });
   }

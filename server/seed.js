@@ -1,5 +1,4 @@
-const { models,
-  sequelize } = require('./models');
+const { models, sequelize } = require('./models');
 const Project  =  models.Project;
 
 const seedData = [
