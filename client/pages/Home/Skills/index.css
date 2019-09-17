@@ -41,3 +41,27 @@
 .right a{
   color: #eee;
 }
+
+.outerOuterIconMenuWrapper{
+  height: calc( 1rem + 48px );
+  position: relative;
+}
+
+.outerIconMenuWrapper{
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px){
+  .wrapper{
+    padding: 0;
+  }
+
+  .left{
+    display: none;
+  }
+
+  .right{
+    padding: 2rem 1rem;
+  }
+}
