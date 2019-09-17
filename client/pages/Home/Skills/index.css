@@ -24,10 +24,10 @@
   font-size: 1.2rem;
   color: #a8bbcf;
 }
-.right > h2{
+.right h2{
   margin: 0;
 }
-.right > h4{
+.right h4{
   margin-top: 2rem;
   margin-bottom: 0;
 }
@@ -42,14 +42,8 @@
   color: #eee;
 }
 
-.outerOuterIconMenuWrapper{
-  height: calc( 1rem + 48px );
-  position: relative;
-}
-
-.outerIconMenuWrapper{
-  position: absolute;
-  width: 100%;
+.mobile{
+  display: none;
 }
 
 @media screen and (max-width: 650px){
@@ -63,5 +57,24 @@
 
   .right{
     padding: 2rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .right h4{
+    margin-top: 1rem;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+  .desktop{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .right{
+    font-size: 1rem;
   }
 }

@@ -1,9 +1,9 @@
-.iconWrapper, .iconMenuWrapper{
+.iconWrapper{
   display: flex;
   padding: 1rem 0;
 }
 
-.iconWrapper:hover, .iconMenuWrapper:hover{
+.iconWrapper:hover{
   background-color: #46637f;
 }
 
@@ -30,38 +30,4 @@
 .active{
   background-color: #4f6f8f;
   color: #eee;
-}
-
-/* IconMenu */
-.iconMenuWrapper{
-  width: 100%;
-  display: none;
-  background-color: #34495e;
-}
-
-.iconMenuWrapper.activeIconMenu{
-  display: flex;
-}
-
-.iconMenuWrapper .icon > svg, .iconMenuWrapper .icon > img{
-  height: 36px;
-  width: 36px;
-}
-
-.menuText > h4{
-  margin: 0;
-  margin-left: 0.5rem;
-}
-
-.iconMenuWrapper .icon{
-  width: 20%;
-  justify-content: center;
-}
-
-.downArrow{
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 1rem;
 }
