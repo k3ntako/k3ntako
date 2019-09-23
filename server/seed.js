@@ -4,7 +4,7 @@ const Project  =  models.Project;
 const seedData = [
   {
     name: "Wakebird",
-    description: "A website for dragon boat team coaches to manage their team. The website allows coaches to create events and boat line-ups, manage their roster, view each individual's attendance, and much more. A team member can respond to events to let the coach know if they are attending the event, send emails to the team, get reminders to respond to events and much more.",
+    description: "A website for dragon boat team coaches to manage their team. The website allows coaches to create events and boat line-ups, manage their roster, view each individual's attendance, and much more. A team member can respond to events to let the coach know if they are attending the event, send emails to the team, get reminders to respond to events and much more.\n\nWakebird was developed with a teammate from my dragon boat team. We have routine video conferences to discuss future plans. I review his PRs to assure prevent bugs and maintain a high standard of code quality. This experience has pushed me to write better code, exposed me to best new technologies, as well as improved my communication skills and my ability to read and comprehend others' code.",
     githubURL: "https://github.com/mighty-speed-krush/Mighty-Speed-Krush",
     demoURL: "https://vimeo.com/337669750",
     videoURL: null,
