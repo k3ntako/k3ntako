@@ -26,7 +26,7 @@ export default (props) => {
         </svg>
       </div>
       <div className={styles.right}>
-        <h3>{ info.title }</h3>
+        <h3 className={styles.title}>{ info.title }</h3>
         <span className={styles.subtitle}>{ info.subtitle }</span>
         { renderDetails(info.details) }
       </div>

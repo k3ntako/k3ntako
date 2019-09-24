@@ -26,7 +26,7 @@ export default class ProjectSection extends Component {
   onScroll = (windowHeight, elem, rect) => {
     const offset = windowHeight - rect.top;
     const offsetPercentage = offset/windowHeight * 100;
-    const translateY = offsetPercentage > 50 ? 0 : 40 - offsetPercentage;
+    const translateY = offsetPercentage > 50 ? 0 : 50 - offsetPercentage;
     elem.style.paddingTop = `${translateY}vh`;
   }
 

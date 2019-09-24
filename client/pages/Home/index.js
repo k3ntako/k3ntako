@@ -58,7 +58,7 @@ export default class Home extends Component {
   render(){
     return <>
     <Top />
-    <Education />
+    <Education addElements={this.addElements}/>
     <Skills />
     <Projects addElements={this.addElements}/>
     <ContactMe />

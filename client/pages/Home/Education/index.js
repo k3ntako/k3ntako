@@ -34,6 +34,25 @@ export default class EducationSection extends Component {
     };
   }
 
+  componentDidMount(){
+    const cardElements = document.querySelectorAll("." + styles.title);
+    const cardElementObjects = [];
+    cardElements.forEach(card =>{
+      cardElementObjects.push({
+        element: card,
+        onScroll: this.onScroll,
+      })
+    })
+    this.props.addElements(cardElementObjects);
+  }
+
+  onScroll = (windowHeight, elem, rect) => {
+    const offset = windowHeight - rect.top;
+    const offsetPercentage = offset/windowHeight * 100;
+    const translateX = offsetPercentage > 30 ? 0 : 30 - offsetPercentage;
+    elem.style.transform = `translateX(${translateX}vW)`;
+  }
+
   renderEducation = () => {
     return this.state.education.map(info => {
       return <EducationCard key={info.title} info={info} />
