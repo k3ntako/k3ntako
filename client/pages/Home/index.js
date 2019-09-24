@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Top from './Top';
 import Education from './Education';
 import Skills from './Skills';
@@ -6,13 +6,63 @@ import Projects from './Projects';
 import ContactMe from './ContactMe';
 import { ToastContainer, toast } from 'react-toastify';
 
-export default (props) => {
-  return <>
+const fallbackFunc = (callback) => {
+  window.setTimeout(callback, 1000/60);
+}
+
+const isVisibleInWindow = (windowHeight, rect) => {
+  if( 0 > rect.bottom ) return false; // elem is above the viewport
+  if( windowHeight < rect.top ) return false; // elem is below the viewport
+  return true; // elem is in the viewport
+}
+
+export default class Home extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      elementObjects: [],
+    };
+    this.scrollY = window.scrollY;
+  }
+
+  componentDidMount(){
+    const scroll = window.requestAnimationFrame || fallbackFunc;
+    const loop = () => {
+      const newScrollY = window.scrollY;
+      if( newScrollY === this.scrollY){
+        return scroll(loop); // no scroll, skip loop
+      }
+
+      this.scrollY = newScrollY;
+
+      const windowHeight = window.innerHeight;
+      this.state.elementObjects.forEach(elemObj => {
+        const rect = elemObj.element.getBoundingClientRect();
+
+        if( isVisibleInWindow(windowHeight, rect) ){
+          elemObj.onScroll(windowHeight, elemObj.element, rect);
+        }
+      })
+      scroll(loop);
+    }
+
+    loop();
+  }
+
+  addElements = (elemObjs) => {
+    this.setState((prevState) => {
+      return { elementObjects: prevState.elementObjects.concat(elemObjs) }
+    })
+  }
+
+  render(){
+    return <>
     <Top />
     <Education />
     <Skills />
-    <Projects />
+    <Projects addElements={this.addElements}/>
     <ContactMe />
     <ToastContainer />
-  </>
+    </>
+  }
 }
