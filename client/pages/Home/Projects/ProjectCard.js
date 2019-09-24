@@ -3,20 +3,11 @@ import IconButton from './IconButton';
 
 import styles from './ProjectCard.css';
 
-//shades of Apple six-colors logo colors
-const COLORS = [
-  styles.blue,
-  styles.purple,
-  styles.red,
-  styles.orange,
-  styles.yellow,
-  styles.green,
-]
 
 export default (props) => {
   const { idx, project } = props;
 
-  return <div className={`${styles.card} ${COLORS[idx%6]}`}>
+  return <div className={styles.card}>
     <div className="part">
       <h2 className={styles.title}>{ project.name }</h2>
       { project.description }

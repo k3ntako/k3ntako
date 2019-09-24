@@ -1,24 +1,11 @@
+.projects{
+  background-color: #34495e;
+}
+
 .card{
   padding: 2rem;
   font-size: 1.3rem;
-}
-.blue{
-  background-color: #54a0ff;
-}
-.purple{
-  background-color: #1dd1a1;
-}
-.red{
-  background-color: #ff6b6b;
-}
-.orange{
-  background-color: #feca57;
-}
-.yellow{
-  background-color: #e775b9;
-}
-.green{
-  background-color: #75e7a3;
+  color: white;
 }
 
 .title{
@@ -31,11 +18,11 @@
 }
 .button{
   margin-right: 1rem;
-  color: #34495e;
+  color: #b8c8d8;
   text-decoration: none;
 }
 .button:hover{
-  color: #19232d;
+  color: #fff;
   text-decoration: underline;
 }
 .text{
