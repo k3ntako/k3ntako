@@ -54,7 +54,7 @@ div.Toastify__toast-container--top-right{
 }
 
 /* Section */
-#aboutMe, #skills, #projects{
+#aboutMe, #skills, #projects, #contactMe{
   margin-top: -45px;
   padding-top: 45px;
 }

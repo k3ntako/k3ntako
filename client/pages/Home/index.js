@@ -4,6 +4,7 @@ import Education from './Education';
 import Skills from './Skills';
 import Projects from './Projects';
 import ContactMe from './ContactMe';
+import Footer from './Footer';
 import { ToastContainer, toast } from 'react-toastify';
 
 const fallbackFunc = (callback) => {
@@ -62,6 +63,7 @@ export default class Home extends Component {
     <Skills />
     <Projects addElements={this.addElements}/>
     <ContactMe />
+    <Footer />
     <ToastContainer />
     </>
   }

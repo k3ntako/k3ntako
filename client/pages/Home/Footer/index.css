@@ -1,0 +1,23 @@
+.wrapper{
+  background-color: #34495e;
+  color: #fff;
+  padding-bottom: 4rem;
+}
+
+.innerWrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.innerWrapper > a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 2rem;
+
+}
+.innerWrapper a:hover{
+  color: rgba(255, 255, 255, 0.5);
+}
