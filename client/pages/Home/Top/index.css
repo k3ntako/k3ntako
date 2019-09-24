@@ -3,9 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   justify-content: space-between;
   background-color: #34495e;
+  background: linear-gradient(#64a6e6, #34495e 90%);
   color: #fff;
 }
 
