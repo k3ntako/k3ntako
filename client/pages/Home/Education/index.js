@@ -12,8 +12,8 @@ export default class EducationSection extends Component {
           title: "Launch Academy",
           subtitle: "Boston, MA",
           details: [
-            "React, Rails, PostgreSQL",
-            "Fast, responsive, and tested websites"
+            "Web development bootcamp taught using React, Rails, PostgreSQL",
+            "Built fast, responsive, and tested websites",
           ],
           startDate: "Sep 2018",
           endDate: "Nov 2018",
