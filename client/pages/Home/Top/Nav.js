@@ -5,7 +5,7 @@ import ExternalLinkIcons from './ExternalLinkIcons';
 import styles from './Nav.css';
 
 const NAV_LINKS_INFO = [
-  { href: "#aboutMe", text: "About Me" },
+  { href: "#experience", text: "Experience" },
   { href: "#skills", text: "Skills" },
   { href: "#projects", text: "Projects" },
   { href: "#contactMe", text: "Contact Me" },

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Top from './Top';
-import Education from './Education';
+import Experience from './Experience';
 import Skills from './Skills';
 import Projects from './Projects';
 import ContactMe from './ContactMe';
@@ -59,7 +59,7 @@ export default class Home extends Component {
   render(){
     return <>
     <Top />
-    <Education addElements={this.addElements}/>
+    <Experience addElements={this.addElements}/>
     <Skills />
     <Projects addElements={this.addElements}/>
     <ContactMe />

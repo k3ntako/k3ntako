@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import EducationCard from './EducationCard';
+import ExperienceCard from './ExperienceCard';
 
 import styles from './index.css';
 
-export default class EducationSection extends Component {
+export default class ExperienceSection extends Component {
   constructor(props){
     super(props);
     this.state = {
-      education: [
+      experience: [
         {
           title: "Launch Academy",
           subtitle: "Boston, MA",
@@ -53,16 +53,16 @@ export default class EducationSection extends Component {
     elem.style.transform = `translateX(${translateX}vW)`;
   }
 
-  renderEducation = () => {
-    return this.state.education.map(info => {
-      return <EducationCard key={info.title} info={info} />
+  renderExperience = () => {
+    return this.state.experience.map(info => {
+      return <ExperienceCard key={info.title} info={info} />
     })
   }
 
   render(){
-    return <div id="aboutMe">
+    return <div id="experience">
       <Blank />
-      { this.renderEducation() }
+      { this.renderExperience() }
       <Blank />
     </div>
   }
