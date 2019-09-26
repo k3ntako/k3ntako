@@ -33,7 +33,7 @@
   flex-direction: column;
   margin: 1rem 0;
 }
-.right > h3{
+.right > .title{
   margin: 0;
 }
 
@@ -61,7 +61,7 @@
     margin-left: 0;
   }
 
-  .right > h3{
+  .right > .title{
     font-size: 1.5rem;
   }
 }
