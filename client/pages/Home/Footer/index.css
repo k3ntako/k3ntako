@@ -4,20 +4,31 @@
   padding-bottom: 4rem;
 }
 
-.innerWrapper{
+.links, .attribution{
   display: flex;
   justify-content: center;
 }
 
-.innerWrapper > a{
+
+.links > a{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   margin: 0 2rem;
-
 }
-.innerWrapper a:hover{
+.links > a:hover{
   color: rgba(255, 255, 255, 0.5);
+}
+
+.attribution > span{
+  margin-top: 3rem;
+  color: #999;
+}
+.attribution a{
+  color: #999;
+}
+.attribution a:hover{
+  color: #ccc;
 }
