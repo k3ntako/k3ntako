@@ -1,20 +1,52 @@
-import React from 'react';
-import IconButton from './IconButton';
+import React from "react";
+import IconButton from "./IconButton";
 
-import styles from './ProjectCard.css';
+import styles from "./ProjectCard.css";
 
+const linkTypes = [
+  {
+    key: "githubURL",
+    name: "Github",
+    icon: "fab fa-github",
+  },
+  {
+    key: "demoURL",
+    name: "Demo",
+    icon: "fas fa-external-link-alt",
+  },
+  {
+    key: "videoURL",
+    name: "Video",
+    icon: "fas fa-external-link-alt",
+  },
+];
 
 export default (props) => {
-  const { idx, project } = props;
+  const { project } = props;
 
-  return <div className={styles.card}>
-    <div className="part">
-      <h2 className={styles.title}>{ project.name }</h2>
-      { project.description }
-      <div className={styles.buttons}>
-        <IconButton text="Github" icon="fab fa-github" link={project.githubURL} />
-        <IconButton text="Demo" icon="fas fa-external-link-alt" link={project.demoURL} />
+  const links = [];
+
+  for (const linkType of linkTypes) {
+    const url = project[linkType.key];
+    if (url) {
+      links.push(
+        <IconButton
+          key={linkType.key}
+          text={linkType.name}
+          icon={linkType.icon}
+          link={url}
+        />
+      );
+    }
+  }
+
+  return (
+    <div className={styles.card}>
+      <div className="part">
+        <h2 className={styles.title}>{project.name}</h2>
+        {project.description}
+        <div className={styles.buttons}>{links}</div>
       </div>
     </div>
-  </div>
-}
+  );
+};

@@ -30,8 +30,8 @@ export default class ProjectSection extends Component {
   };
 
   renderProjects = () => {
-    return projectsInfo.map((project, idx) => {
-      return <ProjectCard key={project.name} idx={idx} project={project} />;
+    return projectsInfo.map((project) => {
+      return <ProjectCard key={project.name} project={project} />;
     });
   };
 
