@@ -1,4 +1,4 @@
-#nav{
+#nav {
   position: relative;
   z-index: 99;
   width: 100%;
@@ -10,7 +10,7 @@
   box-shadow: 0px 5px 7px #23384d;
   font-size: 1.3rem;
 }
-#nav.sticky{
+#nav.sticky {
   position: fixed;
   top: 0;
 }
@@ -23,49 +23,53 @@ a {
   margin: 1rem;
   text-decoration: none;
 }
-.pageLinks > a:hover{
+.pageLinks > a:hover {
   text-decoration: underline solid rgba(255, 255, 255, 0.5);
 }
 
-.externalLinks, .websiteTitle{
+.externalLinks,
+.websiteTitle {
   position: absolute;
 }
 
-.websiteTitle{
+.websiteTitle {
   left: 0;
-  font-family: 'Exo', sans-serif;
+  font-family: "Assistant", sans-serif;
   text-decoration: none;
 }
-.websiteTitle.hidden{
+.websiteTitle.hidden {
   display: none;
 }
 
-.externalLinks{
+.externalLinks {
   right: 0;
 }
-.websiteTitle > a, .externalLinks > a{
+.websiteTitle > a,
+.externalLinks > a {
   margin: 1rem 0.5rem;
 }
-.websiteTitle > a:hover, .externalLinks > a:hover{
+.websiteTitle > a:hover,
+.externalLinks > a:hover {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
 
-.firstname{
+.firstname {
   display: none;
 }
 
-@media screen and (max-width: 800px){
-  .fullname{
+@media screen and (max-width: 800px) {
+  .fullname {
     display: none;
   }
-  .firstname{
+  .firstname {
     display: block;
   }
 }
 
-@media screen and (max-width: 650px){
-  .pageLinks, .externalLinks{
+@media screen and (max-width: 650px) {
+  .pageLinks,
+  .externalLinks {
     display: none;
   }
 }

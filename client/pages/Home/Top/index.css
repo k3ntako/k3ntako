@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,32 +9,32 @@
   color: #fff;
 }
 
-.inner{
+.inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10rem;
 }
-.inner > h1{
+.inner > h1 {
   text-align: center;
-  font-family: 'Exo', sans-serif;
-  font-weight: 200;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
   font-size: 7rem;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
-.inner > span{
+.inner > span {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 800px){
-  .inner > h1{
+@media screen and (max-width: 800px) {
+  .inner > h1 {
     font-size: 6rem;
   }
 }
 
-@media screen and (max-width: 700px){
-  .inner > h1{
+@media screen and (max-width: 700px) {
+  .inner > h1 {
     font-size: 5rem;
   }
 }
