@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import EmailMe from "./EmailMe";
 
 import styles from "./index.css";

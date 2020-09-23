@@ -9,9 +9,9 @@ const EMAIL_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"
 import styles from "./index.css";
 
 export default ({ submit }) => {
-  const [name, setName] = useState("Kentaro Kaneki");
-  const [email, setEmail] = useState("kentarokaneki@gmail.com");
-  const [subject, setSubject] = useState("This is the subject");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
   const validate = () => {
