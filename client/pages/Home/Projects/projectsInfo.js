@@ -21,12 +21,12 @@ export default [
           me to new technologies, and improved my communication skills, and
           helped my ability to read and comprehend others{"'"} code.
         </p>
-        <p>Currently, we are redesigning </p>
+        <p>Currently, we are looking to expand our user base for 2021.</p>
       </>
     ),
-    githubURL: "https://github.com/mighty-speed-krush/Mighty-Speed-Krush",
+    githubURL: null,
     demoURL: null,
-    videoURL: "https://vimeo.com/337669750",
+    videoURL: null,
     startDate: null,
     endDate: null,
     technologies: [],

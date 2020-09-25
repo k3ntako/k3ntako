@@ -12,7 +12,11 @@ export default [
   {
     title: "Wakebird",
     subtitle: "Remote - Co-Founder",
-    details: [],
+    details: [
+      "Wakebird is a dragon boat team management webapp developed with a teammate.",
+      "Used by 70+ paddlers with plans to expand in 2021.",
+      "Please see the additional information below in the Projects section.",
+    ],
     startDate: "Dec 2018",
     endDate: "Present",
   },
