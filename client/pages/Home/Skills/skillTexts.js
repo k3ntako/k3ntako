@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Javascript = (
   <>
@@ -34,11 +35,13 @@ const Java = (
       <b>Gradle</b>, <b>IntelliJ IDEA</b>, <b>Maven Repository</b>, and{" "}
       <b>Gson</b>
     </p>
-
     <h4>Testing</h4>
     <p>
       <b>JUnit</b>
     </p>
+    <h4>Other</h4>
+    <b>Sockets</b>, <b>InputStreams</b>, <b>OutputStreams</b> were important
+    tools in developing the HTTP Server from scratch.
   </>
 );
 
@@ -82,19 +85,24 @@ const Database = (
 const Other = (
   <>
     <h2>Other</h2>
+    <h4>Cloud</h4>
     <p>
-      <b>HTML</b>, <b>CSS</b>, <b>Git</b>, <b>Github</b>, <b>Heroku</b>, and{" "}
-      <b>CI/CD</b> (CircleCI, TravisCI, Heroku)
+      <b>AWS Elastic Beanstalk</b>, <b>AWS EC2</b>, <b>Linode</b>, <b>Linux</b>{" "}
+      environments, and <b>DNS</b> configurations.
+    </p>
+    <h4>Services</h4>
+    <p>
+      <b>Git</b>, <b>Github</b>, <b>Heroku</b>, and <b>CI/CD</b> (
+      <b>CircleCI</b>, <b>TravisCI</b>, <b>Heroku</b>)
+    </p>
+    <h4>Web</h4>
+    <p>
+      <b>HTML</b> and <b>CSS</b>
     </p>
     <p>
       I have been working with <b>HTML</b> and <b>CSS</b> as a hobby since
       middle school. Through my experience building websites, I have gained a
       great appreciation for design.
-    </p>
-    <h4>Third Party APIs</h4>
-    <p>
-      <b>SendGrid</b>, <b>Google Books</b>, <b>Google Maps</b>, <b>Dark Sky</b>,{" "}
-      <b>MBTA</b> (Boston transit), <b>News API</b>
     </p>
   </>
 );

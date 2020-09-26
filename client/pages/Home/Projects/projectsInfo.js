@@ -55,8 +55,8 @@ export default [
         </p>
       </>
     ),
-    githubURL: "",
-    demoURL: "",
+    githubURL: "https://github.com/k3ntako/HTTPServer",
+    demoURL: "http://www.httpserver.k3ntako.com",
     videoURL: null,
     startDate: null,
     endDate: null,
@@ -77,8 +77,8 @@ export default [
         </p>
       </>
     ),
-    githubURL: "",
-    demoURL: "",
+    githubURL: "https://github.com/k3ntako/split-it",
+    demoURL: null,
     videoURL: null,
     startDate: null,
     endDate: null,
@@ -159,8 +159,8 @@ export default [
         </p>
       </>
     ),
-    githubURL: "",
-    demoURL: "",
+    githubURL: "https://github.com/k3ntako/5th-Dimension-CLI",
+    demoURL: null,
     videoURL: null,
     startDate: null,
     endDate: null,

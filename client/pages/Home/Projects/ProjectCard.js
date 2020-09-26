@@ -40,8 +40,10 @@ export default (props) => {
     }
   }
 
+  const id = project.name.toLowerCase().split(" ").join("-");
+
   return (
-    <div className={styles.card}>
+    <div className={styles.card} id={id}>
       <div className="part">
         <h2 className={styles.title}>{project.name}</h2>
         {project.description}
