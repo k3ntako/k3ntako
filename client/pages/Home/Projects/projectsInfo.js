@@ -166,7 +166,53 @@ export default [
     endDate: null,
     technologies: [],
   },
-
+  {
+    name: "Clash Royale Elixir Counter",
+    description: (
+      <>
+        <p>
+          Clash Royale is a mobile real-time strategy game where players battle
+          by playing cards with differing elixir costs. This website keeps track
+          of the opponent's elixir count and the cards played to gain an
+          advantage.
+        </p>
+        <p>
+          I created this website to learn about{" "}
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">
+            web components
+          </a>{" "}
+          and challenged myself to create a website without libraries like
+          React, Angular and Vue. In addition to learning how to create web
+          components, the process introduced new concepts such as the Shadow DOM
+          and I familiarized myself with Selenium testing.
+        </p>
+        <p>
+          Here is why someone might want to use this. Every few seconds, each
+          player will gain an elixir that they can use to play a card. If a
+          player knows that the opponent is low on elixir, the opponent might
+          not be able counter a large attack.
+        </p>
+        <p>
+          Because an API that this website depended was shutdown in early 2020,
+          this website no longer functions as intended.
+        </p>
+        <iframe
+          src="https://player.vimeo.com/video/381713144"
+          width="640"
+          height="390"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </>
+    ),
+    githubURL: "https://github.com/k3ntako/Clash-Royale-Elixir-Counter",
+    demoURL: null,
+    videoURL: "https://vimeo.com/381713144",
+    startDate: null,
+    endDate: null,
+    technologies: [],
+  },
   {
     name: "CafeTako",
     description: (
