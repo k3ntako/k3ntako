@@ -1,7 +1,8 @@
 import React from "react";
 import IconButton from "./IconButton";
 
-import styles from "./ProjectCard.css";
+import styles from "./Projects.css";
+import VimeoPlayer from "./VimeoPlayer";
 
 const linkTypes = [
   {
@@ -40,6 +41,11 @@ export default (props) => {
     }
   }
 
+  let vimeo;
+  if (project.vimeoVideoURL) {
+    vimeo = <VimeoPlayer url={project.vimeoVideoURL} />;
+  }
+
   const id = project.name.toLowerCase().split(" ").join("-");
 
   return (
@@ -48,6 +54,7 @@ export default (props) => {
         <h2 className={styles.title}>{project.name}</h2>
         {project.description}
         <div className={styles.buttons}>{links}</div>
+        {vimeo}
       </div>
     </div>
   );

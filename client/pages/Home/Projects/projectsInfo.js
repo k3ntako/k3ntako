@@ -196,19 +196,12 @@ export default [
           Because an API that this website depended was shutdown in early 2020,
           this website no longer functions as intended.
         </p>
-        <iframe
-          src="https://player.vimeo.com/video/381713144"
-          width="640"
-          height="390"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
       </>
     ),
     githubURL: "https://github.com/k3ntako/Clash-Royale-Elixir-Counter",
     demoURL: null,
-    videoURL: "https://vimeo.com/381713144",
+    videoURL: null,
+    vimeoVideoURL: "https://player.vimeo.com/video/381713144",
     startDate: null,
     endDate: null,
     technologies: [],

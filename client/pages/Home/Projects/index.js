@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ProjectCard from "./ProjectCard";
 
-import styles from "./ProjectCard.css";
+import styles from "./Projects.css";
 import projectsInfo from "./projectsInfo";
 
 export default class ProjectSection extends Component {
