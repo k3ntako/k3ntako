@@ -178,7 +178,10 @@ export default [
         </p>
         <p>
           I created this website to learn about{" "}
-          <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/Web_Components"
+            target="_blank"
+          >
             web components
           </a>{" "}
           and challenged myself to create a website without libraries like
